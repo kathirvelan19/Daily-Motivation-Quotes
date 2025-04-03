@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Boldonse&family=Bungee+Tint&display=swap" rel="stylesheet">
+    <title>Daily Motivation Quotes</title>
+    <style>
+        body {
+            
+            background-image: url(mainbg.jpg);
+            background-size: cover;
+            text-align: center;
+            font-family: "Boldonse", system-ui;
+            padding: 100px;
+            
+        }
+        .container {
+            background: rgb(238, 233, 231);
+            padding: 20px;
+            border-radius: 10px;
+            
+            box-shadow: 0 0 40px   rgba(241, 241, 240, 0.8);
+            transition: box-shadow 0.3s ease-in-out;
+            
+            display: inline-block;
+        }
+        
+        h1 {
+            color: #ff9800;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+            font-family: "Boldonse", system-ui;
+       
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background: #ff9800;
+            color: white;
+            font-family: "Boldonse", system-ui;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Daily Motivation </h1>
+        <p id="quote">Click the button to get inspired!</p>
+        <button onclick="generateQuote()">Get New Quote</button>
+        <p>Have a Nice Day!!</p>
+    </div>
+    <div class="container2">
+        <h1> Your Favourite Quote</h1>
+        <p>For Comment Click Below</p>
+        <a href="https://kathirvelanworld.blogspot.com/2025/02/comment-for-daily-motivational-quotes.html#comments">COMMENT LINK</a>
+        
+    </div>
+
+    <script>
+        alert("Failure is not the opposite of success; it's a part of success. Every setback is a setup for a comeback.")
+        const quotes = ["Believe in yourself and all that you are!", "Every day is a second chance.", "Your only limit is your mind.", "Great things take time. Keep going!", "Dream big and dare to fail.", 
+"You are stronger than you think!", "Do what you love and love what you do.", "Stay focused, go after your dreams and keep moving toward your goals.", "Difficult roads often lead to beautiful destinations.", 
+"Success is not final, failure is not fatal: it is the courage to continue that counts.", "Hustle until your haters ask if you’re hiring.", "It always seems impossible until it’s done.", 
+"Don’t wait for opportunity. Create it.", "Success doesn’t come from what you do occasionally. It comes from what you do consistently.", "Be the energy you want to attract.", 
+"Great things never come from comfort zones.", "You are never too old to set another goal or to dream a new dream.", "Success is getting what you want. Happiness is wanting what you get.", 
+"Hardships often prepare ordinary people for an extraordinary destiny.", "Don’t be pushed by your problems. Be led by your dreams.", "Doubt kills more dreams than failure ever will.", 
+"If you want to achieve greatness, stop asking for permission.", "Don’t stop when you’re tired. Stop when you’re done.", "Difficulties in life are intended to make us better, not bitter.", 
+"The only way to do great work is to love what you do.", "You don’t have to be great to start, but you have to start to be great.", "Don’t let yesterday take up too much of today.", 
+"Perfection is not attainable, but if we chase perfection we can catch excellence.", "Work hard in silence, let your success be the noise.", "Happiness is not something ready made. It comes from your own actions.", 
+"Turn your wounds into wisdom.", "Everything you can imagine is real.", "Be a voice, not an echo.", "Doubt kills more dreams than failure ever will.", "Be so good they can't ignore you.", 
+"Keep your face always toward the sunshine—and shadows will fall behind you.", "Don’t count the days, make the days count.", "We may encounter many defeats but we must not be defeated.", 
+"A winner is a dreamer who never gives up.", "Live as if you were to die tomorrow. Learn as if you were to live forever.", "To be the best, you must be able to handle the worst.", 
+"The harder the battle, the sweeter the victory.", "If you don’t risk anything, you risk even more.", "You only live once, but if you do it right, once is enough.", 
+"Failure is not the opposite of success; it’s part of success.", "Be not afraid of growing slowly, be afraid only of standing still.", "A journey of a thousand miles begins with a single step.", 
+"Work until your idols become your rivals.", "Success is not how high you have climbed, but how you make a positive difference to the world.", "One day or day one. You decide.", 
+"Push yourself, because no one else is going to do it for you.", "Act as if what you do makes a difference. It does.", "The secret of getting ahead is getting started.", 
+"All progress takes place outside the comfort zone.", "Your limitation—it’s only your imagination.", "Do what you can, with what you have, where you are.", 
+"If everything seems under control, you’re not going fast enough.", "Wake up with determination, go to bed with satisfaction.", "You don’t drown by falling in the water. You drown by staying there.", 
+"Success is nothing more than a few simple disciplines, practiced every day.", "Opportunities don’t happen. You create them.", "Failure will never overtake me if my determination to succeed is strong enough.", 
+"Start where you are. Use what you have. Do what you can.", "When the going gets tough, the tough get going.", "Be yourself; everyone else is already taken.", 
+"Live life to the fullest, and focus on the positive.", "We cannot solve problems with the kind of thinking we employed when we came up with them.", "Once you replace negative thoughts with positive ones, you’ll start having positive results.", 
+"The way to get started is to quit talking and begin doing.", "Don’t watch the clock; do what it does. Keep going.", "Some people dream of success, while others wake up and work hard at it.", 
+"If you can dream it, you can do it.", "It does not matter how slowly you go as long as you do not stop.", "Be stubborn about your goals and flexible about your methods.", 
+"Fear kills more dreams than failure ever will.", "Your time is limited, so don’t waste it living someone else’s life.", "There are no limits to what you can accomplish, except the limits you place on your own thinking.", 
+"Start where you are. Use what you have. Do what you can.", "What you get by achieving your goals is not as important as what you become by achieving your goals.", "If you believe it will work out, you’ll see opportunities. If you don’t believe it will work out, you’ll see obstacles.", 
+"It’s not whether you get knocked down, it’s whether you get up.", "If you’re going through hell, keep going.", "Don’t let the fear of losing be greater than the excitement of winning.", 
+"Fall seven times and stand up eight.", "If something is important enough, even if the odds are against you, you should still do it.", "If you’re not willing to risk the usual, you’ll have to settle for the ordinary.", 
+"Don’t wish it were easier. Wish you were better.", "The difference between ordinary and extraordinary is that little extra.", "Do one thing every day that scares you.", 
+"The only limit to our realization of tomorrow is our doubts of today.", "Never give up, for that is just the place and time that the tide will turn.", "What lies behind us and what lies before us are tiny matters compared to what lies within us.", 
+"Small daily improvements over time lead to stunning results.", "Success is getting what you want. Happiness is wanting what you get.", "There is no substitute for hard work.", 
+"Either you run the day or the day runs you.", "What we achieve inwardly will change outer reality.", "Stop waiting. The time will never be just right.", 
+"The best way to predict the future is to create it.", "Action is the foundational key to all success.", "Your big opportunity may be right where you are now.", 
+"Every accomplishment starts with the decision to try.", "If opportunity doesn’t knock, build a door.", "The secret of success is to do the common thing uncommonly well.", 
+"Try not to become a person of success, but rather try to become a person of value.", "I find that the harder I work, the more luck I seem to have.", "Success is a journey, not a destination.", 
+"The best revenge is massive success.", "Success is not in what you have, but who you are.", "Keep your eyes on the stars and your feet on the ground.", "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome.", 
+"Always do your best. What you plant now, you will harvest later.", "If you want to make your dreams come true, the first thing you have to do is wake up."
+
+            
+
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").innerText = quotes[randomIndex];
+        }
+    </script>
+</body>
+</html>
